@@ -59,12 +59,10 @@
 		return coordinate;
 	};
 		
-$("canvas").click(function(loc) {
-    var x = loc.pageX;
-    var y = loc.pageY;
-
-    logClicks(x, y);
-});	
+var clickHandler = function (event) {
+console.log("Click!" + event.pageX + " " + event.pageY);
+};
+$("canvas").click(clickHandler);
 
 </script>
 </body>
